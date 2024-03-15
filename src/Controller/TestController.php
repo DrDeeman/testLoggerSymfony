@@ -3,14 +3,14 @@ namespace App\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use App\Decorators\LoggerDecorator;
+use App\Decorators\EventDecorator;
 use App\Events\TestEvent;
 
 class TestController{
     
     /** @psalm-ignore-variable-method */
     public function __construct(
-        private readonly LoggerDecorator $logger
+        private readonly EventDecorator $logger
     ){}
    
 

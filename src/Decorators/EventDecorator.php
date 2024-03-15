@@ -7,7 +7,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 use App\Events\TestEvent;
 
 
-class LoggerDecorator implements EventDispatcherInterface
+class EventDecorator implements EventDispatcherInterface
 {
    
 
